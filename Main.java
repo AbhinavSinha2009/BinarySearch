@@ -8,7 +8,7 @@ public class Main {
 		System.out.println(binarySearch(arr, 355));
 	}
 
-	public static int binarySearch(int[] arr, int target) {
+	public static int binarySearch(int[] arr, int target) { //O(log n) divides array by 2 and searches
 		int start = 0, end = arr.length - 1;
 		while (start <= end) {
 			int mid = start + (end - start) / 2;
